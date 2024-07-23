@@ -35,4 +35,26 @@ public class SortArrayByIncreasingFrequency
         }
         return nums;
     }
+
+    public int[] FrequencySort1(int[] nums)
+    {
+        // Group the numbers by their values and calculate their frequencies
+        var grouped = nums.GroupBy(x => x)
+                          .Select(g => new { Value = g.Key, Frequency = g.Count() })
+                          .ToList();
+
+        // Sort first by frequency in ascending order, then by value in descending order
+        var sorted = grouped.OrderBy(g => g.Frequency)
+                            .ThenByDescending(g => g.Value)
+                            .ToList();
+
+        // Flatten the sorted result into a single array
+        List<int> result = new List<int>();
+        foreach (var group in sorted)
+        {
+            result.AddRange(Enumerable.Repeat(group.Value, group.Frequency));
+        }
+
+        return result.ToArray();
+    }
 }
