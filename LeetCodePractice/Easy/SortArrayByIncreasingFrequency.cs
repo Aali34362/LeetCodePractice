@@ -2,6 +2,7 @@
 
 public class SortArrayByIncreasingFrequency
 {
+    //My Thinking
     public int[] FrequencySort(int[] nums)
     {
         Dictionary<int, int> numbersCount = new Dictionary<int, int>();
@@ -18,10 +19,16 @@ public class SortArrayByIncreasingFrequency
                 numbersCount.Add(nums[i], count);
             }            
         }
+        ////var ordered = numbersCount
+        ////    .OrderBy(x => x.Value)
+        ////    .ThenBy(entry => entry.Key)
+        ////    .ToDictionary(entry => entry.Key, entry => entry.Value);
+
         var ordered = numbersCount
             .OrderBy(x => x.Value)
-            .ThenBy(entry => entry.Key)
-            .ToDictionary(entry => entry.Key, entry => entry.Value);
+            .ThenByDescending(entry => entry.Key)
+            .ToDictionary();
+
         int counts = 0;
         foreach (KeyValuePair<int, int> entry in ordered)
         {
@@ -65,4 +72,70 @@ public class SortArrayByIncreasingFrequency
             .ThenByDescending(x => x.Key)
             .Aggregate(new List<int>(), (a, b) => { a.AddRange(b); return a; })
             .ToArray();
+
+    public int[] FrequencySort4(int[] nums) =>
+        nums.GroupBy(v => v)
+            .OrderBy(g => g.Count()).ThenByDescending(g => g.Key)
+            .SelectMany(g => g).ToArray();
+
+
+    public int[] FrequencySort5(int[] nums)
+    {
+        if (nums.Length == 0) return nums;
+
+        PriorityQueue<KeyValuePair<int, int>, KeyValuePair<int, int>> queue =
+        new PriorityQueue<KeyValuePair<int, int>, KeyValuePair<int, int>>(new MaxHeapComparer());
+        Dictionary<int, int> map = new Dictionary<int, int>();
+
+        foreach (var num in nums)
+        {
+            if (map.ContainsKey(num))
+            {
+                map[num] += 1;
+            }
+            else
+            {
+                map[num] = 1;
+            }
+        }
+
+        foreach (var dict in map)
+        {
+            queue.Enqueue(new KeyValuePair<int, int>(dict.Key, dict.Value), new KeyValuePair<int, int>(dict.Key, dict.Value));
+        }
+
+        int i = 0;
+        while (queue.Count > 0)
+        {
+            if (queue.TryDequeue(out KeyValuePair<int, int> element, out KeyValuePair<int, int> priority))
+            {
+                //Console.WriteLine("element " + element.Key + " occurs " + element.Value + " times");
+                for (int j = 0; j < element.Value; j++)
+                {
+                    nums[i] = element.Key;
+                    i++;
+                }
+            }
+        }
+        //Array.Reverse(nums);
+        return nums;
+    }
+
+}
+
+
+public class MaxHeapComparer : IComparer<KeyValuePair<int, int>>
+{
+
+    public int Compare(KeyValuePair<int, int> x, KeyValuePair<int, int> y)
+    {
+        // Compare by the absolute difference first
+        int result = x.Value.CompareTo(y.Value);
+        // If the absolute difference is the same, compare by the value
+        if (result == 0)
+        {
+            result = y.Key.CompareTo(x.Key);
+        }
+        return result;
+    }
 }
