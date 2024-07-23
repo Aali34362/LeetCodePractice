@@ -121,6 +121,16 @@ public class SortArrayByIncreasingFrequency
         return nums;
     }
 
+
+    public int[] FrequencySort6(int[] nums) => 
+        nums.GroupBy(num => num)
+        .ToDictionary(g => g.Key, g => g.Count())
+        .GroupBy(p => p.Value)
+        .ToDictionary(g => g.Key, g => g.Select(p => p.Key))
+        .OrderBy(p => p.Key)
+        .SelectMany(p => p.Value.OrderByDescending(n => n)
+        .SelectMany(n => Enumerable.Range(1, p.Key)
+        .Select(_ => n))).ToArray();
 }
 
 
