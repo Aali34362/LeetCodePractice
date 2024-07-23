@@ -35,7 +35,7 @@ public class SortArrayByIncreasingFrequency
         }
         return nums;
     }
-
+    //Chat GPT
     public int[] FrequencySort1(int[] nums)
     {
         // Group the numbers by their values and calculate their frequencies
@@ -57,4 +57,12 @@ public class SortArrayByIncreasingFrequency
 
         return result.ToArray();
     }
+
+    //LeetCode Solutions 
+    public int[] FrequencySort3(int[] nums) =>
+        nums.GroupBy(x => x)
+            .OrderBy(x => x.Count())
+            .ThenByDescending(x => x.Key)
+            .Aggregate(new List<int>(), (a, b) => { a.AddRange(b); return a; })
+            .ToArray();
 }
