@@ -11,5 +11,8 @@
 ////PalindromeNumber palindromeNumber = new PalindromeNumber();
 ////palindromeNumber.IsPalindrome(-121).Dump();
 
-RomanDateTime romanDateTime = new RomanDateTime();
-romanDateTime.DisplayRomanDateTime();
+////RomanDateTime romanDateTime = new RomanDateTime();
+////romanDateTime.DisplayRomanDateTime();
+
+RomanToInteger roman = new RomanToInteger();
+roman.RomanToInt("LVIII").Dump();
