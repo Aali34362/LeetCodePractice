@@ -2,8 +2,6 @@
 using System.Diagnostics;
 
 Console.WriteLine("Leet Code Practice Started On 23-07-2024");
-////Stopwatch stopwatch = new Stopwatch();
-////stopwatch.Start();
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////SortArrayByIncreasingFrequency sortArrayByIncreasingFrequency = new();
@@ -23,7 +21,7 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ////RomanToInteger roman = new RomanToInteger();
 ////roman.RomanToInt("LVIII").Dump();
 
-
+LongestCommonPrefix.LongestCommonPrefixFunc2(["interspecies", "interstellar", "interstate"]).Dump();
 
 
 
@@ -33,11 +31,4 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ///Ignore Codes
 ////ChatClient.ChatClientMain();
 ////RedisJsonChatClient.RedisJsonChatClientMain();
-RedisMultipleJsonChatClient.RedisMultipleJsonChatClientMain();
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////stopwatch.Stop();
-////Console.WriteLine($"Time taken: {stopwatch.Elapsed.TotalSeconds} seconds");
-
-////Process currentProcess = Process.GetCurrentProcess();
-////long memoryUsed = currentProcess.PrivateMemorySize64;
-////Console.WriteLine($"Memory used: {memoryUsed / (1024 * 1024)} MB");
+////RedisMultipleJsonChatClient.RedisMultipleJsonChatClientMain();
