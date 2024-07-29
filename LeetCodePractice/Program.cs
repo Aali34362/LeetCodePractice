@@ -1,4 +1,10 @@
-﻿Console.WriteLine("Leet Code Practice Started On 23-07-2024");
+﻿using LeetCodePractice.IgnoreCodes;
+using System.Diagnostics;
+
+Console.WriteLine("Leet Code Practice Started On 23-07-2024");
+////Stopwatch stopwatch = new Stopwatch();
+////stopwatch.Start();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////SortArrayByIncreasingFrequency sortArrayByIncreasingFrequency = new();
 ////sortArrayByIncreasingFrequency.FrequencySort([1, 1, 2, 2, 2, 3]).Dump();
@@ -14,5 +20,24 @@
 ////RomanDateTime romanDateTime = new RomanDateTime();
 ////romanDateTime.DisplayRomanDateTime();
 
-RomanToInteger roman = new RomanToInteger();
-roman.RomanToInt("LVIII").Dump();
+////RomanToInteger roman = new RomanToInteger();
+////roman.RomanToInt("LVIII").Dump();
+
+
+
+
+
+
+
+/////////////////////////////////
+///Ignore Codes
+////ChatClient.ChatClientMain();
+////RedisJsonChatClient.RedisJsonChatClientMain();
+RedisMultipleJsonChatClient.RedisMultipleJsonChatClientMain();
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////stopwatch.Stop();
+////Console.WriteLine($"Time taken: {stopwatch.Elapsed.TotalSeconds} seconds");
+
+////Process currentProcess = Process.GetCurrentProcess();
+////long memoryUsed = currentProcess.PrivateMemorySize64;
+////Console.WriteLine($"Memory used: {memoryUsed / (1024 * 1024)} MB");
