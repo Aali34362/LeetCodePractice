@@ -25,21 +25,21 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ///
 ////ValidParantheses.IsValid("(([]){})").Dump();
 
-ListNode listNode6 = new ListNode() { val = 4 };
-ListNode listNode5 = new ListNode() { val = 3, next = listNode6 };
-ListNode listNode4 = new ListNode() { val = 1, next = listNode5 };
+////ListNode listNode6 = new ListNode() { val = 4 };
+////ListNode listNode5 = new ListNode() { val = 3, next = listNode6 };
+////ListNode listNode4 = new ListNode() { val = 1, next = listNode5 };
 
-ListNode listNode3 = new ListNode() { val = 4 }; 
-ListNode listNode2 = new ListNode() { val = 2, next = listNode3 }; 
-ListNode listNode1 = new ListNode() { val = 1, next = listNode2 };
+////ListNode listNode3 = new ListNode() { val = 4 }; 
+////ListNode listNode2 = new ListNode() { val = 2, next = listNode3 }; 
+////ListNode listNode1 = new ListNode() { val = 1, next = listNode2 };
 
-ListNode listNode7 = new ListNode(1, new ListNode(2, new ListNode(4)));
-ListNode listNode8 = new ListNode(1, new ListNode(3, new ListNode(4)));
+////ListNode listNode7 = new ListNode(1, new ListNode(2, new ListNode(4)));
+////ListNode listNode8 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-MergeTwoSortedLists.MergeTwoLists(listNode1, listNode4).Dump();
-MergeTwoSortedLists.MergeTwoLists(listNode7, listNode8).Dump();
+////MergeTwoSortedLists.MergeTwoLists(listNode1, listNode4).Dump();
+////MergeTwoSortedLists.MergeTwoLists(listNode7, listNode8).Dump();
 
-
+RemoveDuplicatesfromSortedArray.RemoveDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]).Dump();
 
 
 
