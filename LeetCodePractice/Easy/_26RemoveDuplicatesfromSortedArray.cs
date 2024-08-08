@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public static class RemoveDuplicatesfromSortedArray
+public static class _26RemoveDuplicatesfromSortedArray
 {
     public static int RemoveDuplicates(int[] nums)
     {

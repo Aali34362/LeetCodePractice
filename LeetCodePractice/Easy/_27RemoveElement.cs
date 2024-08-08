@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public static class RemoveElement
+public static class _27RemoveElement
 {
     public static int RemoveElementFunction(int[] nums, int val)
     {

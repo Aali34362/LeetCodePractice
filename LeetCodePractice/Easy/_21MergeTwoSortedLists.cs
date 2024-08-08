@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public static class MergeTwoSortedLists
+public static class _21MergeTwoSortedLists
 {
     public static ListNode MergeTwoLists(ListNode list1, ListNode list2)
     {

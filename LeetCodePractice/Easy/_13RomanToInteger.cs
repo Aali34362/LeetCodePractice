@@ -4,7 +4,7 @@ using System.Diagnostics;
 
 namespace LeetCodePractice.Easy;
 
-public class RomanToInteger
+public class _13RomanToInteger
 {
     public int RomanToInt(string s)
     {

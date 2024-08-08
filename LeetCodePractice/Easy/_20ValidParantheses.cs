@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public static class ValidParantheses
+public static class _20ValidParantheses
 {
     //(([]){})
     //()[{}()]

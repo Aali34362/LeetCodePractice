@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public class TwoSum
+public class _1TwoSum
 {
     //My Thinking
     public int[] TwoSumFunction(int[] nums, int target)

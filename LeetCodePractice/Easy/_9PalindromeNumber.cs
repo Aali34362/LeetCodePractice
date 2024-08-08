@@ -1,6 +1,6 @@
 ﻿namespace LeetCodePractice.Easy;
 
-public class PalindromeNumber
+public class _9PalindromeNumber
 {
     public bool IsPalindrome(int x)
     {

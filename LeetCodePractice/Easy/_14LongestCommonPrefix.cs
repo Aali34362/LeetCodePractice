@@ -3,7 +3,7 @@ using System.Text;
 
 namespace LeetCodePractice.Easy;
 
-public static class LongestCommonPrefix
+public static class _14LongestCommonPrefix
 {
     ////string[] test1 = { "flower", "flow", "flight" };
     ////string[] test2 = { "dog", "racecar", "car" };
