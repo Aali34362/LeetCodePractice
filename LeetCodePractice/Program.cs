@@ -41,7 +41,7 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 
 RemoveDuplicatesfromSortedArray.RemoveDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]).Dump();
 
-
+RemoveElement.RemoveElementFunction([0, 1, 2, 2, 3, 0, 4, 2],2).Dump();
 
 /////////////////////////////////
 ///Ignore Codes
