@@ -11,4 +11,5 @@ public static class _28FindIndexFirstOccurrenceString
         }
         return -1;
     }
+    //We can solve this problem with KMP algo
 }

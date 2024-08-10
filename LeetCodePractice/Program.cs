@@ -39,9 +39,15 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ////MergeTwoSortedLists.MergeTwoLists(listNode1, listNode4).Dump();
 ////MergeTwoSortedLists.MergeTwoLists(listNode7, listNode8).Dump();
 
-_26RemoveDuplicatesfromSortedArray.RemoveDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]).Dump();
+////_26RemoveDuplicatesfromSortedArray.RemoveDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]).Dump();
 
-_27RemoveElement.RemoveElementFunction([0, 1, 2, 2, 3, 0, 4, 2],2).Dump();
+////_27RemoveElement.RemoveElementFunction([0, 1, 2, 2, 3, 0, 4, 2],2).Dump();
+
+////_28FindIndexFirstOccurrenceString.StrStr("sadbutsad", "sad").Dump();
+
+////_35SearchInsertPosition.SearchInsert([1,3],3).Dump();
+
+_58LengthofLastWord.LengthOfLastWord("   fly me   to   the moon  ").Dump();
 
 /////////////////////////////////
 ///Ignore Codes
