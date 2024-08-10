@@ -47,7 +47,9 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 
 ////_35SearchInsertPosition.SearchInsert([1,3],3).Dump();
 
-_58LengthofLastWord.LengthOfLastWord("   fly me   to   the moon  ").Dump();
+////_58LengthofLastWord.LengthOfLastWord("   fly me   to   the moon  ").Dump();
+
+_66PlusOne.PlusOne2([7, 2, 8, 5, 0, 9, 1, 2, 9, 5, 3, 6, 6, 7, 3, 2, 8, 4, 3, 7, 9, 5, 7, 7, 4, 7, 4, 9, 4, 7, 0, 1, 1, 1, 7, 4, 9, 9, 9]).Dump();
 
 /////////////////////////////////
 ///Ignore Codes
