@@ -6,7 +6,7 @@ public static class _67AddBinary
 {
     public static string AddBinary(string a, string b)
     {
-        int firstStringIndex = a.Length - 1;
+        int firstStringIndex = a.Length - 1; 
         int secondStringIndex = b.Length - 1;
 
         int carry = 0;
@@ -17,10 +17,10 @@ public static class _67AddBinary
         while (firstStringIndex >= 0 || secondStringIndex >= 0)
         {
             sum = carry;
-            if (firstStringIndex >= 0) sum += a[firstStringIndex--] - '0';
+            if (firstStringIndex >= 0) sum += a[firstStringIndex--] - '0'; 
             if (secondStringIndex >= 0) sum += b[secondStringIndex--] - '0';
 
-            carry = sum > 1 ? 1 : 0;
+            carry = sum > 1 ? 1 : 0; 
 
             result += (sum % 2).ToString();
         }
