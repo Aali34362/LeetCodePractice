@@ -53,7 +53,9 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 
 ////_67AddBinary.AddBinary("111","111").Dump();
 
-_69Sqrtx.MySqrt(8).Dump();
+////_69Sqrtx.MySqrt(8).Dump();
+
+//_70Climbing_Stairs.ClimbStairs(10).Dump();   
 
 /////////////////////////////////
 ///Ignore Codes
