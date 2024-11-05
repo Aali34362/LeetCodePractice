@@ -36,8 +36,10 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ////ListNode listNode7 = new ListNode(1, new ListNode(2, new ListNode(4)));
 ////ListNode listNode8 = new ListNode(1, new ListNode(3, new ListNode(4)));
 
-////MergeTwoSortedLists.MergeTwoLists(listNode1, listNode4).Dump();
-////MergeTwoSortedLists.MergeTwoLists(listNode7, listNode8).Dump();
+////_21MergeTwoSortedLists.MergeTwoLists(listNode1, listNode4).Dump();
+////_21MergeTwoSortedLists.MergeTwoLists(listNode7, listNode8).Dump();
+
+_83RemoveDuplicatesSortedList.DeleteDuplicates(new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3))))));
 
 ////_26RemoveDuplicatesfromSortedArray.RemoveDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]).Dump();
 
@@ -56,6 +58,9 @@ Console.WriteLine("Leet Code Practice Started On 23-07-2024");
 ////_69Sqrtx.MySqrt(8).Dump();
 
 //_70Climbing_Stairs.ClimbStairs(10).Dump();   
+
+////Console.WriteLine(_1957DeleteCharactersMakeFancyString.MakeFancyString("aaabaaaa"));
+////Console.WriteLine(_796RotateString.RotateString("abcde", "abced"));
 
 /////////////////////////////////
 ///Ignore Codes
